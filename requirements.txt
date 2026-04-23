@@ -1,0 +1,16 @@
+torch
+torchvision
+transformers
+numpy
+scipy
+h5py
+matplotlib
+seaborn
+scikit-learn
+pandas
+tqdm
+pillow
+psutil
+opencv-python
+pyyaml
+ujson
