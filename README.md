@@ -1,6 +1,5 @@
-## Chameleon: Anisotropic Sharpness-Aware Minimization for Cross-Domain Adaptation
-
-This repository contains the official implementation of the ICML 2026 submission **"Chameleon: Anisotropic Sharpness-Aware Minimization for Cross-Domain Adaptation"**.
+```markdown
+## Chameleon: Learning Anisotropic Perturbation Geometry in Sharpness-Aware Optimization
 
 The codebase provides:
 - **Anisotropic SAM-style optimizers** (`algo/`, including `car`, `asam`, `fsam`, `vasso`, `mu2p`, `ssam`, etc.)
@@ -42,9 +41,19 @@ The dataset loaders are implemented in `datasets/`:
 - `office_caltech10.py`
 - `domainnet.py`
 
-Most datasets will be **automatically downloaded** (or prepared) into a local directory when first used, following the paths and download utilities defined in each file. For large domain adaptation benchmarks (e.g., PACS, DomainNet), you may need to:
-- Manually download the datasets to a local folder
-- Adjust root paths in the dataset files or provide environment variables / symlinks as appropriate
+#### Public Download URLs
+Most standard datasets (like CIFAR) will be **automatically downloaded** via `torchvision` when first used. However, for large cross-domain adaptation benchmarks, or if you are running on an offline cluster, you may need to download them manually from their official sources:
+
+* **CIFAR-10 & CIFAR-100**: [https://www.cs.toronto.edu/~kriz/cifar.html](https://www.cs.toronto.edu/~kriz/cifar.html)
+* **Tiny-ImageNet**: [http://cs231n.stanford.edu/tiny-imagenet-200.zip](http://cs231n.stanford.edu/tiny-imagenet-200.zip)
+* **PACS**: [https://domaingeneralization.github.io/](https://domaingeneralization.github.io/) *(Also widely available on [Kaggle](https://www.kaggle.com/datasets/nicodji/pacs-dataset))*
+* **Office-Caltech10**: [https://people.eecs.berkeley.edu/~jhoffman/domainadapt/](https://people.eecs.berkeley.edu/~jhoffman/domainadapt/)
+* **DomainNet**: [http://ai.bu.edu/M3SDA/](http://ai.bu.edu/M3SDA/)
+
+**Setup Instructions:**
+For large domain adaptation benchmarks (e.g., PACS, DomainNet), you may need to:
+1. Manually download the datasets to a local folder using the links above.
+2. Unzip and adjust the root paths in the corresponding dataset files (e.g., `datasets/pacs.py`) or provide environment variables / symlinks as appropriate.
 
 Please refer to the corresponding dataset scripts in `datasets/` if you need to customize paths or preprocessing.
 
@@ -152,4 +161,4 @@ Performance and sharpness-related statistics:
 
 The code is released for **academic research** related to optimization, sharpness-aware minimization, and cross-domain adaptation.  
 For questions about the code or paper, please contact the authors of **"Chameleon: Anisotropic Sharpness-Aware Minimization for Cross-Domain Adaptation"** (contact information as listed in the ICML 2026 submission).
-
+```
