@@ -1,4 +1,3 @@
-```markdown
 ## Chameleon: Learning Anisotropic Perturbation Geometry in Sharpness-Aware Optimization
 
 The codebase provides:
@@ -15,6 +14,12 @@ If you use this code, please cite our paper once it becomes publicly available.
 
 - **Python**: recommended 3.9+  
 - **CUDA**: recommended CUDA-capable GPU and recent PyTorch build
+
+Install dependencies (no version pins; adjust as needed):
+
+```bash
+pip install -r requirements.txt
+```
 
 The main libraries used include:
 - `torch`, `torchvision`
@@ -155,4 +160,3 @@ Performance and sharpness-related statistics:
 
 The code is released for **academic research** related to optimization, sharpness-aware minimization, and cross-domain adaptation.  
 For questions about the code or paper, please contact the authors of **"Chameleon: Anisotropic Sharpness-Aware Minimization for Cross-Domain Adaptation"** (contact information as listed in the ICML 2026 submission).
-```
