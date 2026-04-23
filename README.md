@@ -16,12 +16,6 @@ If you use this code, please cite our paper once it becomes publicly available.
 - **Python**: recommended 3.9+  
 - **CUDA**: recommended CUDA-capable GPU and recent PyTorch build
 
-Install dependencies (no version pins; adjust as needed):
-
-```bash
-pip install -r requirements.txt
-```
-
 The main libraries used include:
 - `torch`, `torchvision`
 - `transformers` (for DeiT / ViT / Swin / EfficientNet image models)
